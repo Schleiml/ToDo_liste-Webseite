@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    background-color: #000311;
+}
+
+#EingabeFeld {
+    height: 25px;
+    margin-top: 10px;
+}
+
+#B {
+    margin-top: 10px;
+    background-color: #004d8b;
+    border: none;
+    border-radius: 7px;
+    font-size: 25px;
+    transition: 0.3s, 0.3s;
+}
+#B:hover {
+    font-size: 30px;
+    background-color: #8fbeff;
+}
+
+#Mittel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Box {
+
+    height: 800px;
+    width: 500px;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color: #121335;
+    color: aliceblue;
+    position: relative;
+}
+
+#Box::after, #Box::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(#28013f, red,  blue, #28013f);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 4px;
+    border-radius: 15px;
+}
+
+#Box::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
